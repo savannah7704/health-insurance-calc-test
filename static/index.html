@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dice Roller API Test</title>
+    <script>
+        const API_URL = "https://dice-roller-azure-dna3engebka0e3hf.centralus-01.azurewebsites.net/";
+
+        async function wakeServer() {
+            try {
+                await fetch(`${API_URL}/wake`);
+                console.log("Server wake-up request sent.");
+            } catch (error) {
+                console.error("Wake-up failed:", error);
+            }
+        }
+
+        async function rollDice() {
+            try {
+                const response = await fetch(`${API_URL}/roll`);
+                const data = await response.json();
+                document.getElementById("result").innerText = `Dice Roll: ${data.roll}`;
+            } catch (error) {
+                console.error("Error fetching dice roll:", error);
+            }
+        }
+
+    </script>
+</head>
+<body onload="wakeServer()">
+    <h1>Dice Roller API Test</h1>
+    <button onclick="rollDice()">Roll Dice</button>
+    <p id="result"></p>
+</body>
+</html>

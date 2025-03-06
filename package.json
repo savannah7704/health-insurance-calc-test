@@ -1,0 +1,24 @@
+{
+  "name": "dice-roller-azure",
+  "version": "1.0.0",
+  "description": "dice-roller-azure",
+  "homepage": "https://github.com/savannah7704/dice-roller-azure#readme",
+  "bugs": {
+    "url": "https://github.com/savannah7704/dice-roller-azure/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/savannah7704/dice-roller-azure.git"
+  },
+  "license": "MIT",
+  "author": "Savannah Stumpf",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2"
+  }
+}
