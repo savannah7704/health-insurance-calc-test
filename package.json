@@ -1,14 +1,14 @@
 {
-  "name": "dice-roller-azure",
+  "name": "health-insurance-calculator-test",
   "version": "1.0.0",
-  "description": "dice-roller-azure",
-  "homepage": "https://github.com/savannah7704/dice-roller-azure#readme",
+  "description": "Test for health insurance calculator",
+  "homepage": "https://github.com/savannah7704/health-insurance-calc-test#readme",
   "bugs": {
     "url": "https://github.com/savannah7704/dice-roller-azure/issues"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/savannah7704/dice-roller-azure.git"
+    "url": "git+https://github.com/savannah7704/health-insurance-calc-test.git"
   },
   "license": "MIT",
   "author": "Savannah Stumpf",

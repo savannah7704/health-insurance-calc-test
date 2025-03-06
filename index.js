@@ -5,15 +5,17 @@ const app = express();
 const port = process.env.PORT || 3000;
 
 app.use(express.static(path.join(__dirname, 'static')));
-const allowedOrigin = 'https://polite-island-01e695b10.4.azurestaticapps.net'; // allows only the dice roller static website to make requests
+const allowedOrigin = '*'; // Right now, the server allows requests from any source. We will need to replace the asterisk with URL to the static website
 app.use(cors({
   origin: allowedOrigin
 }));
 
-app.get('/roll', (request, response) => {
-    console.log('Calling "/roll" on the Node.js server.');
-    response.json({ roll: Math.floor(Math.random() * 6) + 1 });
-});
+
+// We need an app.get function for adding up the points.
+
+// We need an app.get function for calculating BMI.
+
+// Any other calculations also need an app.get function.
 
 app.use((request, response) => {
     response.status(404);

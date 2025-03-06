@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dice Roller API Test</title>
+    <title>Health insurance test</title>
     <script>
-        const API_URL = "https://dice-roller-azure-dna3engebka0e3hf.centralus-01.azurewebsites.net/";
+        const API_URL = "https://health-insurance-test-ss-dre3b3h3fueefbau.centralus-01.azurewebsites.net/";
 
         async function wakeServer() {
             try {
@@ -16,21 +16,9 @@
             }
         }
 
-        async function rollDice() {
-            try {
-                const response = await fetch(`${API_URL}/roll`);
-                const data = await response.json();
-                document.getElementById("result").innerText = `Dice Roll: ${data.roll}`;
-            } catch (error) {
-                console.error("Error fetching dice roll:", error);
-            }
-        }
-
     </script>
 </head>
 <body onload="wakeServer()">
-    <h1>Dice Roller API Test</h1>
-    <button onclick="rollDice()">Roll Dice</button>
-    <p id="result"></p>
+    <h1>Health insurance calculator test</h1>>
 </body>
 </html>
